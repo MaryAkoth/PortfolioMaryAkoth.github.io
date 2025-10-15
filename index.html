@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odhiambo Mary Akoth | Portfolio</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dbe6fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+  /* ===== HEADER ===== */
+header {
+  background-color: #032a55;
+  color: white;
+  padding: 40px 30px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.header-flex img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #00b4d8;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.header-info {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.3em;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.1em;
+  color: #dce3f0;
+}
+
+.cv-button {
+  background-color: #00b4d8;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #0077b6;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header-info {
+    text-align: center;
+  }
+}
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 10px 10px;
+      
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d1b2a;
+      font-size: 2em;
+      border-bottom: 3px solid #00b4d8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .centered {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    /* ===== ABOUT ===== */
+    #about p {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills-grid {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .skill-box {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex: 1 1 45%;
+      padding: 25px;
+      transition: all 0.3s ease;
+      min-width: 280px;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-box h3 {
+      color: #0077b6;
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      border-left: 4px solid #00b4d8;
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      font-size: 1.05em;
+    }
+
+    /* ===== PROJECTS ===== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h4 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+
+    .project-card a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== CONTACT ===== */
+    #contact {
+      text-align: center;
+    }
+
+    #contact p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    #contact a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .skills-grid {
+        flex-direction: column;
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+<header>
+  <div class="header-flex">
+    <img src="myprofile.jpg" alt="Profile Picture" />
+    <div class="header-info">
+      <h1>Odhiambo Mary Akoth</h1>
+      <p>Backend Developer (Django | Python) | Data Science Enthusiast</p>
+      <a href="curriculum vitae.pdf" download>
+        <button class="cv-button">Download CV</button>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="centered"><h2>About Me</h2></div>
+    <p>
+      I am a backend developer passionate about building scalable, efficient systems using Django and Python.
+      I also explore the data science world — uncovering insights using Power BI, SQL, and Tableau.
+      I love solving real-world problems with technology and continuously learning to grow both technically and creatively.
+    </p>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="centered"><h2>Skills</h2></div>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3>Backend Development</h3>
+        <ul>
+          <li>Python (Django Framework)</li>
+          <li>RESTful API Design</li>
+          <li>Database Management (MySQL, SQLite)</li>
+          <li>Authentication & Authorization</li>
+          <li>Cloud Deployment (Render, Heroku)</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Data Science</h3>
+        <ul>
+          <li>Python (Pandas, NumPy, Matplotlib)</li>
+          <li>SQL Querying</li>
+          <li>Power BI & Tableau Visualization</li>
+          <li>Data Cleaning & Transformation</li>
+          <li>Exploratory Data Analysis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="centered"><h2>Backend Projects</h2></div>
+    <div class="projects">
+      <div class="project-card">
+        <h4>Inua Mkulima</h4>
+        <p>An agritech system connecting farmers to markets, weather updates, and expert consultations.</p>
+        <a href="https://github.com/MaryAkoth/Inua-Mkulima" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h4>FineFix Furniture</h4>
+        <p>A furniture booking and management platform built with Django for client order tracking and uploads.</p>
+        <a href="https://github.com/MaryAkoth/FineFix-Furniture" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h4>EujimSolutions Portal</h4>
+        <p>A company portal system for document uploads, client tracking, and team collaboration.</p>
+        <a href="https://github.com/MaryAkoth/Eujimm-Portal" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h4>Smart Contract</h4>
+        <p>A time-locked savings contract demonstrating blockchain logic integration with web technologies.</p>
+        <a href="https://github.com/MaryAkoth/Smart-Contract" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h4>Web Scripting</h4>
+        <p>A collection of JavaScript-based automation and UI scripting tools.</p>
+        <a href="https://github.com/MaryAkoth/Web-Scripting" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DATA SCIENCE PROJECTS ===== -->
+  <section id="data-science">
+    <div class="centered"><h2>Data Science Projects</h2></div>
+    <div class="projects">
+      <div class="project-card">
+        <h4>Health Record Analysis</h4>
+        <p>A data science project analyzing health records for trends and insights using Python and Power BI.</p>
+        <a href="https://github.com/MaryAkoth/Health-Record-Analysis" target="_blank">View on GitHub</a>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="centered"><h2>Contact</h2></div>
+    <p>Email: <a href="mailto:maryakoth846@gmail.com">maryakoth846@gmail.com</a></p>
+
+    <p>GitHub: <a href="https://github.com/MaryAkoth" target="_blank">https://github.com/MaryAkoth</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mary-odhiambo-b1a608295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app&lipi=urn%3Ali%3Apage%3Amessaging_thread%3Bad68e478-3d3e-4994-8dd8-bf6c4874c31a" target="_blank">https://www.linkedin.com/in/mary-odhiambo-b1a608295</a></p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Odhiambo Mary Akoth | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
